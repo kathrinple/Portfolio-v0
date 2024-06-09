@@ -6,28 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles.css" />
-
-    <!-- Fonts -->
-    <link
-      href="https://api.fontshare.com/v2/css?f[]=gambetta@400&f[]=quicksand@300&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="resources/css/styles.css" />
   </head>
-  <body>
+
+  <body class="home-body">
     <header>
-      <h1>Kathrin Pleuger</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pages/projects.html">Projects</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
-        </ul>
+      <nav class="main-nav">
+        <a class="nav_menu-name" href="#">Kathrin Pleuger</a>
+        <section class="nav_section">
+          <ul class="nav_menu">
+            <li class="nav_menu-item"><a href="#">Home</a></li>
+            <li class="nav_menu-item">
+              <a href="pages/projects.html">Projects</a>
+            </li>
+            <li class="nav_menu-item">
+              <a href="pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </section>
       </nav>
     </header>
+
     <main>
-      <figure>
+      <figure class="figure_main-image">
         <img
+          class="main_image"
           src="resources/assets/hand-coding.svg"
           alt="Coding on a Notebook"
           height="520"
@@ -38,12 +41,12 @@
         </figcaption>
       </figure>
       <section class="main_introduction">
-        <h1>Hey, ich bin Kathrin!</h1>
-        <p>
+        <h1 class="main_heading">Hey, ich bin Kathrin!</h1>
+        <p class="main_description">
           Ich bin Studentin der Fachhochschule Dortmund und absolviere dort den
           Bachelor in Medizinische Informatik.
         </p>
-        <p>
+        <p class="main_description">
           Auf meiner Website finden Sie eine Auswahl meiner bisherigen Projekte
           und können mehr über mich erfahren.
         </p>
@@ -70,15 +73,15 @@
         </div>
       </section>
     </main>
-    <footer>
+
+    <footer class="main-footer">
       <address class="footer_social-selection">
         <ul class="footer_social">
-          <li>
+          <li class="footer_social-icon">
             <a href="mailto:kathrin.pleuger@icloud.com">
               <svg
+                class="footer_social-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -88,12 +91,11 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="footer_social-icon">
             <a href="https://github.com/kathrinple" target="_blank">
               <svg
+                class="footer_social-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
                 viewBox="0 0 432 416"
               >
                 <path
@@ -105,7 +107,13 @@
           </li>
         </ul>
       </address>
-      <p>&copy; 2024 Kathrin Pleuger</p>
+      <p class="copyright">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Kathrin Pleuger
+      </p>
     </footer>
   </body>
 </html>
