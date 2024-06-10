@@ -259,7 +259,6 @@ main {
 
   .main_image {
     grid-column: 1;
-    align-self: center;
   }
 
   .main_introduction {
