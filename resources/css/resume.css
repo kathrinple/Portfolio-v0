@@ -1,0 +1,26 @@
+/* Document Styles */
+.resume-body {
+  background: var(--background-page);
+  color: var(--text-light);
+}
+
+/* Content */
+.main-nav {
+  font-family: "Quicksand", serif;
+  font-size: 1.1rem;
+}
+
+.main-footer,
+.main-nav,
+.copyright {
+  background: var(--background-header-footer-resume);
+}
+
+.personal-infos h1 {
+  font-size: 2rem;
+}
+
+/* Images */
+.profile_img {
+  max-width: 400px;
+}
